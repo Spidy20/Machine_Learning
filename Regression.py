@@ -15,14 +15,14 @@ LR.fit(x_train,y_train)
 
 
 x_test=[[72.8],[61.1],[67.4],[70.2],[75.6],[60.2],[65.3],[59.2]]
-y_test=[[70.4],[75.8],[68.2],[79.9],[58.8],[66.4],[65.5],[58.8]]
+
 prediction=LR.predict(x_test)
 
 print(prediction)
 
 plt.scatter(x_train,y_train,color='b')
 plt.plot(x_test,prediction,color='black',linewidth=3)
-plt.plot(y_test,prediction,color='green',linewidth=3)
+
 
 plt.xlabel("Father Height in inches")
 plt.ylabel("Son height in inches")
