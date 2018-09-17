@@ -20,5 +20,4 @@ plt.scatter(Future_gdp,prediction,color='green',linewidth='2')
 plt.plot(Future_gdp,prediction,color='orange',linewidth='2')
 plt.xlabel("Growth of GDP in years")
 plt.ylabel("GDP in %")
-
 plt.show()

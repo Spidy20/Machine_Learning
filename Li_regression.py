@@ -5,7 +5,7 @@ workdays=[[365],[300],[250],[200]]
 salary=[150000,130000,110000,100000]
 
 plt.scatter(workdays,salary,color='blue')
-plt.xlabel('workdays of employe')
+plt.xlabel('workdays of employee')
 plt.ylabel('salary of workdays')
 
 
