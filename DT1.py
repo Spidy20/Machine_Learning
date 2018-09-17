@@ -13,6 +13,6 @@ y_train=data.loc[:,'Gender']##Give value to model from data
 
 DT=tree.DecisionTreeClassifier()
 DT.fit(x_train,y_train)
-Test=[[138,26,1]]
+Test=[[141,12,1]]
 prediction=DT.predict(Test)
 print(prediction)
