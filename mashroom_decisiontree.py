@@ -13,8 +13,6 @@ for i in range(22):
 
 x = data.iloc[:,0:22]
 y = data.iloc[:,0]
-
-
 xtrain, xtest, ytrain, ytest = train_test_split(x,y, test_size=0.2, random_state=42, stratify = y)
 
 
@@ -31,7 +29,7 @@ print("")
 ##decision tree classifier
 DT=DecisionTreeClassifier()
 DT.fit(xtrain,ytrain)
-print('prediction tree prediction: ',model.predict(xtest))
+print('Decision tree prediction: ',model.predict(xtest))
 print("Decision tree score: ",model.score(xtest,ytest))
 
 print("")
@@ -42,3 +40,12 @@ NN=MLPClassifier()
 NN.fit(xtrain,ytrain)
 print("Nueral network prediction: ",NN.predict(xtest))
 print("Nueral network score: ",NN.score(xtest,ytest))
+
+
+
+print(' ')
+###SVM
+s=SVC()
+s.fit(xtrain,ytrain)
+print('SVM prediction is :',s.predict(xtest))
+print('SVM score: ',s.score(xtest,ytest))
