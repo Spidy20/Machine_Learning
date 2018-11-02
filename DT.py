@@ -13,3 +13,5 @@ DT.fit(X,Y)
 Test=[[183,26,1]]
 prediction=DT.predict(Test)
 print(prediction)
+
+
