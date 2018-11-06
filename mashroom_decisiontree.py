@@ -41,9 +41,9 @@ NN.fit(xtrain,ytrain)
 print("Nueral network prediction: ",NN.predict(xtest))
 print("Nueral network score: ",NN.score(xtest,ytest))
 
-
-
+#### For space between outputs
 print(' ')
+
 ###SVM
 s=SVC()
 s.fit(xtrain,ytrain)

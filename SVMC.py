@@ -16,7 +16,6 @@
 from sklearn import svm, datasets
 from sklearn.model_selection import GridSearchCV
 from sklearn.model_selection import train_test_split
-import lightfm
 
 iris = datasets.load_iris()
 x=iris.data
